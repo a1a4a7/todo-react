@@ -13,16 +13,25 @@ header {
 ul{
   list-style: none;
   border: 1px solid green;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(100px, 1fr); */
+
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
   justify-content:center;
-  /* margin: 30px; */
-  margin-left: 200px;
+
+
+  height: 200px;
+  /* margin-left: 200px; */
 }
 
 li {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  flex: 0 0 33%;
+  /* flex-direction: row; */
+  box-sizing: border-box;
 }
 
 li span {
