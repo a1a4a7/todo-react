@@ -34,7 +34,6 @@ function App() {
   const handleInput = (e) => {
     setInput(e.target.value);
   };
-  console.log(error);
   const handleSubmit = (e) => {
     e.preventDefault(); // browser default
     // if(isEdit)
